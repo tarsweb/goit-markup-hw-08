@@ -1,0 +1,124 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity 250ms $main-transition-timing-function;
+
+  &--is-hidden{
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* animation */
+@keyframes fadeOut {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    border-radius: 0;
+  }
+  to {
+    transform: translate(300%, -100%) scale(0.4);
+    opacity: 0.7;
+    border-radius: 70%;
+    background: $accent-dark-color;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translate(-300%, -100%) scale(0.4);
+    opacity: 0.7;
+    border-radius: 70%;
+    background: $accent-dark-color;
+  }
+
+  80% {
+    transform: translate(-100%, -50%) scale(0.7);
+    opacity: 0.7;
+    border-radius: 30%;
+    background: $main-light-color;
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    border-radius: 0;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 530px;
+  height: 580px;
+
+  margin: 0 auto;
+
+  padding: 40px;
+
+  background-color: $main-light-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  animation: fadeIn 350ms ease-in;
+  animation-fill-mode: forwards;
+
+  .backdrop--is-hidden &{
+    animation: fadeOut 350ms ease-out;
+  }
+}
+
+.modal__button {
+  position: absolute;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: var(--main-light-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  transition: fill var(--main-transition-duration) var(--main-transition-timing-function);
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: $accent-light-color;
+  }
+
+  &--close {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+.modal__title {
+  @extend %title;
+
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+@import './form/form-service_order';

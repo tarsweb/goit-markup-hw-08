@@ -1,0 +1,36 @@
+.team-member__description {
+  padding: 30px 32px;
+}
+
+.team-member__title {
+  // @extend %title;
+
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+}
+
+.team-member__position {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+
+  color: $primary-light-color;
+}
+
+// .team-member__social-link{
+  
+//   &:hover,
+//   &:focus {
+//   fill: $main-light-color;
+//   background-color: $accent-light-color;
+//   }
+// }  

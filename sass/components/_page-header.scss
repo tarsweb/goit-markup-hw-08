@@ -1,0 +1,24 @@
+.page-header {
+  $color-header-border: #ECECEC;
+  border-bottom: 1px solid $color-header-border;
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__site-logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.page-header__link{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+@import './parts/navigation';
+@import './parts/logo';
+@import './contact/contacts';

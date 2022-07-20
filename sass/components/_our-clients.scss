@@ -1,0 +1,43 @@
+.our-clients {
+  @extend %section;
+}
+
+.our-clients__title {
+  @extend %title
+}
+
+.our-clients__list {
+  @extend %list;
+
+  display: flex;
+  gap: $margin-set-gap;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-left: 0;
+}
+
+.our-client {
+  @extend %link;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+
+  fill: $accent-link-color;
+
+  border: 1px solid $accent-link-color;
+  border-radius: 4px;
+
+  transition-property: fill, border-color;
+
+  &:hover,
+  &:focus {
+    fill: $accent-light-color;
+    border-color: $accent-light-color;
+  }
+}

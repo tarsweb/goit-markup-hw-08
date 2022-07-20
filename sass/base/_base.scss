@@ -1,0 +1,21 @@
+:root {
+  --temp-var : 0;
+}
+
+body {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+  // color: var(--primary-dark-color);
+  // background-color: var(--main-light-color);
+  color: $primary-dark-color;
+  background-color: $main-light-color;
+}
+
+img {
+  display: block;
+  padding: 0;
+}

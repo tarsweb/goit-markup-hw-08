@@ -1,0 +1,28 @@
+.social-link {
+  @extend %link;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  fill: $accent-link-color;
+
+  transition: $main-transition-duration $main-transition-timing-function;
+  transition-property: fill, background-color;
+
+  &:hover,
+  &:focus {
+    fill: $main-light-color;
+    background-color: $accent-light-color;
+  }
+
+  &--theme-dark {
+    fill: $main-light-color;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}

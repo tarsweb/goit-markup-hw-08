@@ -1,0 +1,32 @@
+@import './parts/works-filter-list';
+
+.works-list{
+  @extend %list;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: $margin-set-gap;
+
+  margin: 0;
+  //margin-left: calc(-1 * $margin-set-gap);
+
+  padding-left: 0;
+}
+
+.works-list__item {
+
+  // $count-inline: 3;
+  // flex-basis: calc(100% / $count-inline - $margin-set-gap);
+
+  transition: $main-transition-duration $main-transition-timing-function;
+  transition-property: box-shadow;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+@import './parts/work';

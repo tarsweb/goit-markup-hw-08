@@ -1,0 +1,14 @@
+.social-contacts {
+  @extend %list;
+
+  display: flex;
+
+  padding-left: 0;
+}
+
+.social-contacts__item{
+  
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
