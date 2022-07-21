@@ -11,7 +11,7 @@
 .our-team__list {
   @extend %list;
 
-  display: flex;
+  // display: flex;
   /* gap: var(--margin-set-gap); */
 
   margin-top: 0;
@@ -20,20 +20,25 @@
 }
 
 .our-team__item {
-  $count-inline: 4;
-  flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap) / $count-inline);
+  // $count-inline: 4;
+  // flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap) / $count-inline);
+
+  width: 100%;
 
   background-color: $main-light-color;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+              0px 1px 1px rgba(0, 0, 0, 0.14),
+              0px 2px 1px rgba(0, 0, 0, 0.2);
 
-
-  &:not(:first-child) {
-    margin-left: $margin-set-gap;
+  &:not(:last-child) {
+    margin-bottom: $margin-set-gap
   }
+
+  // &:not(:first-child) {
+  //   margin-left: $margin-set-gap;
+  // }
 }
 
 @import './parts/team-member';

@@ -1,20 +1,28 @@
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
 
-  width: 1200px;
+  // width: 1200px;
+
+  @media screen and (max-width: $mobile) {
+    max-width: $mobile;
+  }
+
 }
 
-.section {
-  @extend %section;
-}
+// .section {
+//   @extend %section;
+// }
 
-.title {
-  @extend %title;
-}
-// 
+// .title {
+//   @extend %title;
+//}
 
 /* Семантическое скрытие элементов */
 .visually-hidden {

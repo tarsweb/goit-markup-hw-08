@@ -1,10 +1,16 @@
 .form-subscribe {
-  display: inline-flex;  
+  // display: inline-flex;  
 }
 
 .form-subscribe__label {
-  width: 360px;
+  display: block;
+
+  // desktop
+  //width: 360px;
+
   height: 50px;
+
+  margin-bottom: 30px;
 }
 
 .form-subscribe__input {
@@ -33,7 +39,11 @@
 
   display: inline-flex;
   align-items: center;
-  margin-left: 12px;
+  
+  
+  // desktop
+  // margin-left: 12px;
+
   padding: 10px 30px;
 
   width: 200px;

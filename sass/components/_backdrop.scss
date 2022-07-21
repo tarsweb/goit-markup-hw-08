@@ -11,9 +11,15 @@
   opacity: 1;
   transition: opacity 250ms $main-transition-timing-function;
 
+  z-index: 1000;
+
   &--is-hidden{
     opacity: 0;
     pointer-events: none;
+  }
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin: 94px 15px;
   }
 }
 
@@ -60,12 +66,16 @@
   left: 50%;
 
   display: block;
-  width: 530px;
-  height: 580px;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    width: 530px;
+    height: 580px;
+  }
 
   margin: 0 auto;
 
-  padding: 40px;
+  // desktop
+  // padding: 40px;
 
   background-color: $main-light-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -121,4 +131,4 @@
   line-height: 1.15;
 }
 
-@import './form/form-service_order';
+// @import './form/form-service_order';

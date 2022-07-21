@@ -1,24 +1,82 @@
 .page-header {
-  $color-header-border: #ECECEC;
-  border-bottom: 1px solid $color-header-border;
+  //   $color-header-border: #ECECEC;
+  //   border-bottom: 1px solid $color-header-border;
 }
 
 .page-header__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
 }
 
 .page-header__site-logo {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  // decktop
+  // padding-top: 10px;
+  // padding-bottom: 10px;
 }
 
-.page-header__link{
-  padding-top: 32px;
-  padding-bottom: 32px;
+.page-header__link {
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
 }
 
 @import './parts/navigation';
 @import './parts/logo';
 @import './contact/contacts';
+
+.menu-button {
+  margin: 0;
+  padding: 0;
+
+  background-color: $main-light-color;
+
+  border: 0;
+
+  z-index: 100;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accent-light-color;
+  }
+
+  & .icon-close {
+    display: none;
+  }
+
+  &.is-open .icon-close {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: none;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}

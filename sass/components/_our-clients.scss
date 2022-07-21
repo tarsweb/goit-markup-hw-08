@@ -10,12 +10,17 @@
   @extend %list;
 
   display: flex;
+  flex-wrap: wrap;
   gap: $margin-set-gap;
 
   margin-top: 0;
   margin-bottom: 0;
 
   padding-left: 0;
+}
+
+.our-clients__item {
+  flex-basis: calc((100% - $margin-set-gap) / 2);
 }
 
 .our-client {
@@ -25,7 +30,7 @@
   justify-content: center;
   align-items: center;
 
-  width: 170px;
+  // width: 170px;
   height: 92px;
 
   fill: $accent-link-color;

@@ -1,6 +1,12 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="menu" viewBox="0 0 32 32">
+<path d="M2.875 10.167v-2.917h26.25v2.917h-26.25zM2.875 17.458h26.25v-2.916h-26.25v2.916zM2.875 24.75h26.25v-2.917h-26.25v2.917z"></path>
+</symbol>
 <symbol id="close" viewBox="0 0 32 32">
+<path d="M28.5 6.018l-2.518-2.518-9.982 9.982-9.982-9.982-2.518 2.518 9.982 9.982-9.982 9.982 2.518 2.518 9.982-9.982 9.982 9.982 2.518-2.518-9.982-9.982 9.982-9.982z"></path>
+</symbol>
+<symbol id="close-alt" viewBox="0 0 32 32">
 <path d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"></path>
 </symbol>
 <symbol id="envelope" viewBox="0 0 43 32">

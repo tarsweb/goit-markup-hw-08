@@ -1,5 +1,7 @@
 .whot-do {
-  @extend %section; 
+  @extend %section;
+
+  display: none;
 }
 
 .whot-do__list {
