@@ -67,6 +67,8 @@
 
   display: block;
 
+  overflow-y: scroll;
+
   @media screen and (max-width: calc($tablet - 1px)) {
     width: 530px;
     height: 580px;

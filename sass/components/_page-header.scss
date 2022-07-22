@@ -1,26 +1,71 @@
 .page-header {
-  //   $color-header-border: #ECECEC;
-  //   border-bottom: 1px solid $color-header-border;
+  position: relative;
+
+  @media screen and (min-width: $tablet){
+    $color-header-border: #ECECEC;
+     border-bottom: 1px solid $color-header-border;
+  }
 }
 
 .page-header__container {
   display: flex;
   justify-content: space-between;
-  // align-items: center;
+  align-items: center;
 }
 
 .page-header__site-logo {
   padding-top: 16px;
   padding-bottom: 16px;
 
-  // decktop
-  // padding-top: 10px;
-  // padding-bottom: 10px;
+  @media screen and (min-width: $tablet) {
+   padding-top: 10px;
+   padding-bottom: 10px;
+  }
+}
+.page-header__link {
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
-.page-header__link {
-  //   padding-top: 32px;
-  //   padding-bottom: 32px;
+.page-header__social-contacts{
+  display: none;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    display: flex;
+
+    margin: 0;
+    margin-top: 64px;
+    padding: 0;
+  }
+}
+
+.page-header__items{
+  display: inline-flex;
+  // &:not(:first-child) {
+  //   margin-left: 20px;
+  // }
+  &:not(:last-child)::after {
+    content: "";
+    border: 1px solid rgba(33,33,33,.2);
+    margin-left: 10px;
+  }
+
+}
+
+.page-header__social-link {
+  width: max-content;
+  
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    background-color: transparent
+  }
 }
 
 @import './parts/navigation';
@@ -28,6 +73,8 @@
 @import './contact/contacts';
 
 .menu-button {
+  display: none;
+
   margin: 0;
   padding: 0;
 
@@ -37,24 +84,24 @@
 
   z-index: 100;
 
-  @media screen and (min-width: $tablet) {
-    display: none;
+  @media screen and (max-width: calc($tablet - 1px)) {
+    display: block;
   }
 
-  &:hover,
-  &:focus {
-    fill: $accent-light-color;
-  }
+  // &:hover,
+  // &:focus {
+  //   // fill: $accent-light-color;
+  // }
 
   & .icon-close {
     display: none;
   }
 
-  &.is-open .icon-close {
+  &--is-open .icon-close {
     display: block;
   }
 
-  &.is-open .icon-menu {
+  &--is-open .icon-menu {
     display: none;
   }
 }
@@ -63,13 +110,20 @@
   display: none;
 
   @media screen and (max-width: calc($tablet - 1px)) {
-    display: none;
+    // display: none;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
 
-    &.is-open {
+    padding: 48px 40px;
+    width: 100%;
+    height: 796px;
+
+    background-color: $main-light-color;
+
+    outline:  1px solid orangered;
+
+    &--is-open {
       display: block;
     }
   }

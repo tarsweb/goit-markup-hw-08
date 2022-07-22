@@ -22,7 +22,7 @@
     />
     <!-- Styles -->
     <!-- <link rel="stylesheet" type="text/css" href="./css/styles.css" /> -->
-    <link rel="stylesheet" type="text/css" href="./css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
 
@@ -32,17 +32,19 @@
         <a href="./" class="site-logo page-header__site-logo">
           Web<span class="site-logo--dark">Studio</span>
         </a>
-        <button 
+        <button
           class="menu-button"
-          type="button" 
+          type="button"
           aria-expanded="false"
           aria-controls="menu-container"
-          data-menu-button>
-          <svg 
-            class="menu" 
-            width="32" 
-            height="32" 
-            aria-label="Переключатель мобильного меню">
+          data-menu-button
+        >
+          <svg
+            class="menu"
+            width="32"
+            height="32"
+            aria-label="Переключатель мобильного меню"
+          >
             <use class="icon-close" href="./images/icon.svg#close" />
             <use class="icon-menu" href="./images/icon.svg#menu" />
           </svg>
@@ -51,19 +53,34 @@
           <nav class="site-navigation">
             <ul class="site-navigation__list">
               <li class="site-navigation__item">
-                <a href="./" class="site-navigation__link page-header__link current"> Студия</a>
+                <a
+                  href="./"
+                  class="site-navigation__link page-header__link current"
+                >
+                  Студия</a
+                >
               </li>
               <li class="site-navigation__item">
-                <a href="./portfolio.html" class="site-navigation__link page-header__link">Портфолио</a>
+                <a
+                  href="./portfolio.html"
+                  class="site-navigation__link page-header__link"
+                  >Портфолио</a
+                >
               </li>
               <li class="site-navigation__item">
-                <a href="#" class="site-navigation__link page-header__link">Контакты</a>
+                <a href="#" class="site-navigation__link page-header__link"
+                  >Контакты</a
+                >
               </li>
             </ul>
           </nav>
-          <ul class="contacts">
+          <div class="contacts-thumb">
+            <ul class="contacts">
             <li class="contacts__item">
-              <a href="mailto:info@example.com" class="contacts__link page-header__link">
+              <a
+                href="mailto:info@example.com"
+                class="contacts__link page-header__link"
+              >
                 <svg class="contacts__icon" width="16" height="16">
                   <use href="./images/icon.svg#envelope" />
                 </svg>
@@ -71,14 +88,64 @@
               </a>
             </li>
             <li class="contacts__item">
-              <a href="tel:+380991111111" class="contacts__link page-header__link">
+              <a
+                href="tel:+380991111111"
+                class="contacts__link page-header__link"
+              >
                 <svg class="contacts__icon" width="16" height="16">
                   <use href="./images/icon.svg#smartphone" />
                 </svg>
                 +38 099 111 11 11
               </a>
             </li>
-          </ul>
+            </ul>
+            <ul class="social-contacts page-header__social-contacts">
+            <li class="social-contacts__item page-header__items">
+              <a
+                class="social-link page-header__social-link"
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                lang="en"
+              >
+                Instagram
+              </a>
+            </li>
+            <li class="social-contacts__item page-header__items">
+              <a
+                class="social-link page-header__social-link"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter"
+              >
+                Twitter
+              </a>
+            </li>
+            <li class="social-contacts__item page-header__items">
+              <a
+                class="social-link page-header__social-link"
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook"
+              >
+                Facebook
+              </a>
+            </li>
+            <li class="social-contacts__item page-header__items">
+              <a
+                class="social-link page-header__social-link"
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin"
+              >
+                Linkedin
+              </a>
+            </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -86,7 +153,8 @@
       <section class="primary">
         <div class="primary__container container">
           <h1 class="primary__title">
-            Эффективные решения <br/> для вашего бизнеса
+            Эффективные решения <br />
+            для вашего бизнеса
           </h1>
           <button class="primary__button" type="button" data-modal-open>
             Заказать услугу
@@ -112,7 +180,7 @@
             <li class="our-edge__item">
               <div class="our-edge__icon-thumb">
                 <svg class="our-edge__icon" width="70" height="70">
-                  <use href="./images/icon.svg#clock"/>
+                  <use href="./images/icon.svg#clock" />
                 </svg>
               </div>
               <h3 class="our-edge__title">Пунктуальность</h3>
@@ -138,7 +206,7 @@
                 <svg class="our-edge__icon" width="70" height="70">
                   <use href="./images/icon.svg#astronaut" />
                 </svg>
-              </div> 
+              </div>
               <h3 class="our-edge__title">Современные технологии</h3>
               <p class="our-edge__description">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -155,9 +223,9 @@
             <li class="whot-do__item">
               <div class="whot-do__thumb">
                 <img
-                src="./images//whot-do/box_1.jpg"
-                alt="Изображение разработки десктопного приложения"
-                width="370"
+                  src="./images//whot-do/box_1.jpg"
+                  alt="Изображение разработки десктопного приложения"
+                  width="370"
                 />
                 <p class="whot-do__text">Десктопные приложения</p>
               </div>
@@ -165,22 +233,22 @@
             <li class="whot-do__item">
               <div class="whot-do__thumb">
                 <img
-                src="./images//whot-do/box_2.jpg"
-                alt="Изображение разработки мобильного приложения"
-                width="370"
+                  src="./images//whot-do/box_2.jpg"
+                  alt="Изображение разработки мобильного приложения"
+                  width="370"
                 />
                 <p class="whot-do__text">Мобильные приложения</p>
-            </div>
+              </div>
             </li>
             <li class="whot-do__item">
               <div class="whot-do__thumb">
                 <img
-                src="./images//whot-do/box_3.jpg"
-                alt="Изображение разработки дизайна"
-                width="370"
+                  src="./images//whot-do/box_3.jpg"
+                  alt="Изображение разработки дизайна"
+                  width="370"
                 />
                 <p class="whot-do__text">Дизайнерские решения</p>
-            </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -199,7 +267,9 @@
                 />
                 <div class="team-member__description">
                   <h3 class="team-member__title">Игорь Демьяненко</h3>
-                  <p lang="en" class="team-member__position">Product Designer</p>
+                  <p lang="en" class="team-member__position">
+                    Product Designer
+                  </p>
                   <ul class="social-contacts">
                     <li class="social-contacts__item">
                       <a
@@ -260,14 +330,16 @@
             <li class="our-team__item">
               <div class="team-member">
                 <img
-                class="team-member__photo"
-                src="./images/team/team_img_2.jpg"
-                alt="Фотография специалиста Ольги Репиной"
-                width="270"
+                  class="team-member__photo"
+                  src="./images/team/team_img_2.jpg"
+                  alt="Фотография специалиста Ольги Репиной"
+                  width="270"
                 />
                 <div class="team-member__description">
                   <h3 class="team-member__title">Ольга Репина</h3>
-                  <p lang="en" class="team-member__position">Frontend Developer</p>
+                  <p lang="en" class="team-member__position">
+                    Frontend Developer
+                  </p>
                   <ul class="social-contacts">
                     <li class="social-contacts__item">
                       <a
@@ -322,16 +394,16 @@
                       </a>
                     </li>
                   </ul>
-              </div>
+                </div>
               </div>
             </li>
             <li class="our-team__item">
               <div class="team-member">
                 <img
-                class="team-member__photo"
-                src="./images/team/team_img_3.jpg"
-                alt="Фотография специалиста Николая Тарасова"
-                width="270"
+                  class="team-member__photo"
+                  src="./images/team/team_img_3.jpg"
+                  alt="Фотография специалиста Николая Тарасова"
+                  width="270"
                 />
                 <div class="team-member__description">
                   <h3 class="team-member__title">Николай Тарасов</h3>
@@ -396,10 +468,10 @@
             <li class="our-team__item">
               <div class="team-member">
                 <img
-                class="team-member__photo"
-                src="./images/team/team_img_4.jpg"
-                alt="Фотография специалиста Михаила Ермакова"
-                width="270"
+                  class="team-member__photo"
+                  src="./images/team/team_img_4.jpg"
+                  alt="Фотография специалиста Михаила Ермакова"
+                  width="270"
                 />
                 <div class="team-member__description">
                   <h3 class="team-member__title">Михаил Ермаков</h3>
@@ -413,7 +485,11 @@
                         rel="noopener noreferrer"
                         aria-label="instagram"
                       >
-                        <svg class="contacts-social__icon" width="20" height="20">
+                        <svg
+                          class="contacts-social__icon"
+                          width="20"
+                          height="20"
+                        >
                           <use href="./images/icon.svg#instagram" />
                         </svg>
                       </a>
@@ -439,7 +515,11 @@
                         rel="noopener noreferrer"
                         aria-label="facebook"
                       >
-                        <svg class="contacts-social__icon" width="20" height="20">
+                        <svg
+                          class="contacts-social__icon"
+                          width="20"
+                          height="20"
+                        >
                           <use href="./images/icon.svg#facebook" />
                         </svg>
                       </a>
@@ -530,7 +610,9 @@
                   >
                 </li>
                 <li class="address__item">
-                  <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+                  <a href="tel:+380991111111" class="address__link"
+                    >+38 099 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
@@ -551,7 +633,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-contacts__item" >
+              <li class="social-contacts__item">
                 <a
                   class="social-link social-link--theme-dark"
                   href="https://twitter.com"
@@ -562,7 +644,7 @@
                   <svg class="social-link__icon" width="20" height="20">
                     <use href="./images/icon.svg#twitter" />
                   </svg>
-              </a>
+                </a>
               </li>
               <li class="social-contacts__item">
                 <a
@@ -596,9 +678,14 @@
             <p class="page-footer__uppertitle">Подпишитесь на рассылку</p>
             <form class="form-subscribe" name="form-subscribe">
               <label class="form-subscribe__label">
-                <input class="form-subscribe__input" type="email" name="email-subscribe" placeholder="E-mail">
+                <input
+                  class="form-subscribe__input"
+                  type="email"
+                  name="email-subscribe"
+                  placeholder="E-mail"
+                />
               </label>
-              <button class="form-subscribe__button" type="submit" >
+              <button class="form-subscribe__button" type="submit">
                 Подписаться
                 <svg class="form-subscribe__icon" width="24" height="24">
                   <use href="./images/icon.svg#send" />
@@ -612,57 +699,93 @@
     <!-- Modal -->
     <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
-        <button class="modal__button modal__button--close" type="button" data-modal-close>
-            <svg width="18" height="18">
-                <use href="./images/icon.svg#close" />
-            </svg>
+        <button
+          class="modal__button modal__button--close"
+          type="button"
+          data-modal-close
+        >
+          <svg width="18" height="18">
+            <use href="./images/icon.svg#close" />
+          </svg>
         </button>
         <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="form-service_order" name="form-service_order" autocomplete="off" method="POST">
-            <label class="formfield-label">
-              <span>Имя</span>
-              <div class="formfield-input-wrap">
-                <input class="formfield-input" type="text" name="name" autocomplete="on" placeholder=" ">
-                <svg class="formfield-input-wrap__icon" width="18" height="18">
-                  <use href="./images/icon.svg#person" />
-                </svg> 
-              </div>
-            </label>
-            <label class="formfield-label">
-              <span>Телефон</span>
-              <div class="formfield-input-wrap">
-                <input class="formfield-input" type="tel" name="phone_number" placeholder=" ">
-                <svg class="formfield-input-wrap__icon" width="18" height="18">
-                  <use href="./images/icon.svg#phone" />
-                </svg>
-              </div>
-            </label>
-            <label class="formfield-label">
-              <span>Почта</span>
-              <div class="formfield-input-wrap">
-                <input class="formfield-input" type="email" name="email" autocomplete="on" placeholder=" ">
-                <svg class="formfield-input-wrap__icon" width="18" height="18">
-                  <use href="./images/icon.svg#email" />
-                    </svg>
-                </div>
-            </label>
-            <label class="formfield-label">
-                Комментарий
-                <textarea class="formfield-textarea" name="comment" rows=6 placeholder="Введите текст"></textarea>
-            </label>
-            <div class="form-service_order--centered">
-              <div class="form-service_order--concord">
-                <label class="formfield-label form-service_order__label--concord">
-                  <input class="formfield-checkbox visually-hidden" type="checkbox" name="checkbox_concord" value="true">
-                  <span class="formfield-checkbox-icon"></span>
-                  Соглашаюсь с рассылкой и принимаю
-                </label>
-                <a class="formfield-checkbox-link" href="#">Условия договора</a>
-              </div>
-              <button class="form-service_order__button-submit" type="submit">
-                Отправить
-              </button>
+        <form
+          class="form-service_order"
+          name="form-service_order"
+          autocomplete="off"
+          method="POST"
+        >
+          <label class="formfield-label">
+            <span>Имя</span>
+            <div class="formfield-input-wrap">
+              <input
+                class="formfield-input"
+                type="text"
+                name="name"
+                autocomplete="on"
+                placeholder=" "
+              />
+              <svg class="formfield-input-wrap__icon" width="18" height="18">
+                <use href="./images/icon.svg#person" />
+              </svg>
             </div>
+          </label>
+          <label class="formfield-label">
+            <span>Телефон</span>
+            <div class="formfield-input-wrap">
+              <input
+                class="formfield-input"
+                type="tel"
+                name="phone_number"
+                placeholder=" "
+              />
+              <svg class="formfield-input-wrap__icon" width="18" height="18">
+                <use href="./images/icon.svg#phone" />
+              </svg>
+            </div>
+          </label>
+          <label class="formfield-label">
+            <span>Почта</span>
+            <div class="formfield-input-wrap">
+              <input
+                class="formfield-input"
+                type="email"
+                name="email"
+                autocomplete="on"
+                placeholder=" "
+              />
+              <svg class="formfield-input-wrap__icon" width="18" height="18">
+                <use href="./images/icon.svg#email" />
+              </svg>
+            </div>
+          </label>
+          <label class="formfield-label">
+            Комментарий
+            <textarea
+              class="formfield-textarea"
+              name="comment"
+              rows="6"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <div class="form-service_order--centered">
+            <div class="form-service_order--concord">
+              <label class="formfield-label form-service_order__label--concord">
+                <input
+                  class="formfield-checkbox visually-hidden"
+                  type="checkbox"
+                  name="checkbox_concord"
+                  value="true"
+                />
+                <span class="formfield-checkbox-icon"></span>
+                Соглашаюсь с рассылкой и принимаю
+              </label>
+              <a class="formfield-checkbox-link" href="#">Условия договора</a>
+            </div>
+            <button class="form-service_order__button-submit" type="submit">
+              Отправить
+            </button>
+          </div>
         </form>
       </div>
     </div>

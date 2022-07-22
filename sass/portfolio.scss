@@ -1,10 +1,16 @@
-// @import './utils/variables';
-// @import './base/base';
-// @import './utils/plaseholders';
-// @import './common/common';
 
-// @import './components/page-header';
+@import './utils/breakpoints';
 
-// @import './components/works-list';
+@import './utils/variables';
+@import './base/base';
+@import './utils/plaseholders';
+@import './common/common';
 
-// @import './components/page-footer';
+@import './components/contact/social-contacts';
+@import './components/contact/social-link';
+
+@import './components/page-header';
+
+@import './components/works-list';
+
+@import './components/page-footer';
