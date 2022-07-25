@@ -8,12 +8,14 @@
 .page-footer__list {
   @extend %list;
 
-  // display: flex;
-
   margin-top: 0;
   margin-bottom: 0;
 
   padding-left: 0;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .page-footer__site-logo {
@@ -24,8 +26,20 @@
 
   text-align: center;
 
-  &:not(:last-child) {
-    margin-bottom: 60px;
+  @media screen and (max-width: calc($tablet - 1px)) {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+  
+  @media screen and (min-width: $desktop) {
+    &:not(:first-child) {
+      margin-left: 70px;
+    }
+
+    &:last-child {
+      margin-left: 93px;
+    }  
   }
 
   // desktop
@@ -50,6 +64,11 @@
   text-transform: uppercase;
 
   color: $main-light-color;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 12px;
+  }
+
 }
 
 // .page-footer__social-link{

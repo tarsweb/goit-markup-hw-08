@@ -1,7 +1,9 @@
 .whot-do {
   @extend %section;
 
-  display: none;
+  @media screen and (max-width: calc($desktop - 1px)) {
+    display: none;
+  }
 }
 
 .whot-do__list {

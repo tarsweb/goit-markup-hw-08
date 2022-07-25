@@ -96,4 +96,25 @@
   @media screen and (max-width: calc($tablet - 1px)) {
     display: none;
   }
+
+  &--envelope {
+    width: 14px;
+    height: 10px;
+
+    @media screen and (min-width: $desktop) {
+      width: 16px;
+      height: 12px;
+    }
+  }
+
+  &--smartphone {
+    width: 10px;
+    height: 14px;
+
+    @media screen and (min-width: $desktop) {
+      width: 10px;
+      height: 16px;
+    }
+
+  }
 }

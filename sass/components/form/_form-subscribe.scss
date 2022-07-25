@@ -1,5 +1,7 @@
 .form-subscribe {
-  // display: inline-flex;  
+  @media screen and (min-width: $desktop) {
+    display: inline-flex;  
+  }
 }
 
 .form-subscribe__label {
@@ -11,6 +13,11 @@
   height: 50px;
 
   margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop) {
+    width: 360px;
+    margin-bottom: 0;
+  }
 }
 
 .form-subscribe__input {
@@ -61,12 +68,15 @@
 
   transition: background-color $main-transition-duration $main-transition-timing-function;
 
-
   &:hover,
   &:focus {
     $background-color: #188CE8;
 
     background-color: $background-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
   }
 }
 

@@ -20,7 +20,19 @@
 }
 
 .our-clients__item {
-  flex-basis: calc((100% - $margin-set-gap) / 2);
+  $count-inline: 6;
+  flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap)/$count-inline);
+
+  @media screen and (max-width : calc($tablet - 1px) ) {
+    $count-inline: 2;
+    flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap)/$count-inline);
+  }
+
+  @media screen and (max-width : calc($desktop - 1px)) {
+    $count-inline: 3;
+    flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap)/$count-inline);
+  }
+  
 }
 
 .our-client {
