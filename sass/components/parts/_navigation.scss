@@ -44,11 +44,9 @@
   }
 
   @media screen and (min-width: $tablet) {
-    margin-right: 50px; 
-    
-    // &:not(:last-child) {
-    //   margin-right: 0;
-    // }
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
@@ -59,17 +57,19 @@
   display: block;
 
   letter-spacing: 0.02em;
+  
+  // &:hover,
+  // &:focus {
+  //   color: $accent-light-color;
+  //   fill: $accent-light-color;
+  // }
 
   @media screen and (max-width: calc($tablet - 1px)) {
     font-size: 40px;
     line-height: 1.175;
   }
 
-  // &:hover,
-  // &:focus {
-  //   color: $accent-light-color;
-  //   fill: $accent-light-color;
-  // }
+  
 
   @media screen and (min-width: $tablet) {
 
