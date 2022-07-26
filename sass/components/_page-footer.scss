@@ -15,6 +15,9 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    justify-content: space-around;
   }
 }
 
@@ -23,7 +26,6 @@
 }
 
 .page-footer__item {
-
   text-align: center;
 
   @media screen and (max-width: calc($tablet - 1px)) {
@@ -31,15 +33,25 @@
       margin-bottom: 60px;
     }
   }
+
+  @media screen and (min-width: $tablet) { 
+    &:not(:last-child) {
+      margin-bottom: 55px;
+    }
+  }
   
   @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
     &:not(:first-child) {
       margin-left: 70px;
     }
 
     &:last-child {
       margin-left: 93px;
-    }  
+    }
   }
 
   // desktop
@@ -64,6 +76,10 @@
   text-transform: uppercase;
 
   color: $main-light-color;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 5px;
+  }
 
   @media screen and (min-width: $desktop) {
     padding-top: 12px;

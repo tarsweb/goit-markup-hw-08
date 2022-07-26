@@ -5,17 +5,35 @@
   justify-content: center;
 
   margin-top: 0;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
 
   padding-left: 0;
+
+  @media screen and (max-width: ($tablet - 1px)) {
+    flex-wrap: wrap; 
+    gap: 15px;
+    justify-content: flex-start;
+
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .works-filter-list__item {
 
-  &:not(:first-child) {
-    margin-left: 8px;
+  @media screen and (min-width: $tablet) {
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
   }
-}  
+}
 
 .filter-button {
   @extend %button;

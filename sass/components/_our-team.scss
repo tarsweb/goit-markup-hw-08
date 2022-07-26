@@ -26,10 +26,7 @@
 }
 
 .our-team__item {
-  $count-inline: 4;
-  flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap) / $count-inline);
-
-  width: 100%;
+  flex-basis: 100%;
 
   background-color: $main-light-color;
 
@@ -44,9 +41,14 @@
     }
   }
 
-  @media screen and (max-width: calc($desktop - 1px)) {
+  @media screen and (min-width: $tablet) {
     $count-inline: 2;
     flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap) / $count-inline)  
+  }
+
+  @media screen and (min-width: $desktop) {
+    $count-inline: 4;
+    flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap) / $count-inline);
   }
 
   // &:not(:first-child) {

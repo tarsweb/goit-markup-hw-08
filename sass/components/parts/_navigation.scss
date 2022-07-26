@@ -2,7 +2,7 @@
   // 
 
   @media screen and (max-width: calc($tablet - 1px)) {
-    margin-bottom: 302px;
+    margin-bottom: 20px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -41,6 +41,10 @@
 
   @media screen and (max-width: calc($tablet - 1px)) {
     margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: $tablet) {
@@ -55,7 +59,8 @@
   position: relative;
 
   display: block;
-
+  
+  font-weight: 500;
   letter-spacing: 0.02em;
   
   // &:hover,
@@ -73,7 +78,7 @@
 
   @media screen and (min-width: $tablet) {
 
-    font-weight: 500;
+    font-size: 14px;
     line-height: 1.143;
     
     &.current::after {
@@ -87,7 +92,7 @@
       height: 4px;
 
       background-color: $accent-light-color;
-      border-radius: 2px;    
+      border-radius: 2px;
     }
   }
 }

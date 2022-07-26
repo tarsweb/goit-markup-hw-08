@@ -4,6 +4,10 @@
   @media screen and (max-width: calc($desktop - 1px)) {
     display: none;
   }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 0;
+  }
 }
 
 .whot-do__list {
