@@ -16,6 +16,7 @@ body {
 img {
   display: block;
   padding: 0;
+  width: 100%;
 }
 
 .address__link, .our-client, .contacts__link, .site-logo, .site-navigation__link, .social-link {
@@ -449,6 +450,11 @@ img {
   fill: #757575;
 }
 @media screen and (max-width: 767px) {
+  .contacts__item--accent {
+    color: #2196f3;
+  }
+}
+@media screen and (max-width: 767px) {
   .contacts__item {
     font-size: 24px;
     line-height: 1.167;
@@ -456,7 +462,6 @@ img {
   .contacts__item:last-child {
     font-size: 34px;
     line-height: 1.176;
-    color: #2196f3;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -753,7 +758,7 @@ img {
 .our-team__list {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0;
+  padding-left: 0;
   /* gap: var(--margin-set-gap); */
 }
 @media screen and (min-width: 768px) {
@@ -791,10 +796,6 @@ img {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
   }
-}
-
-.team-member__photo {
-  min-width: 100%;
 }
 
 .team-member__description {
@@ -1401,12 +1402,6 @@ img {
   resize: none;
   font-size: 14px;
   line-height: 1.714;
-}
-@media screen and (min-width: 1200px) {
-  .formfield-textarea {
-    font-size: 12px;
-    line-height: 1.167;
-  }
 }
 .formfield-textarea::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);

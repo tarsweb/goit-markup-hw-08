@@ -108,10 +108,10 @@
   font-size: 14px;
   line-height: 1.714;
   
-  @media screen and (min-width: $desktop) {
-    font-size: 12px;
-    line-height: 1.167;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   font-size: 12px;
+  //   line-height: 1.167;
+  // }
 
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);

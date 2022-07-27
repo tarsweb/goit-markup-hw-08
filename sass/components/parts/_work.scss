@@ -11,7 +11,6 @@
 
   margin-top: 0;
   margin-bottom: 0;
-  
 
   font-size: 18px;
   line-height: 1.56;
@@ -41,18 +40,22 @@
   }
 }
 
-.work__preview{
-  min-width: 100%;
-}
+// .work__preview{
+//   max-width: 100%;
+// }
 
 .work__description {
   $border-color: #EEEEEE; 
 
   padding: 20px 24px;
 
-  min-width: 370px;
+  // min-width: 370px;
 
   border: 1px solid $border-color;
+
+  // @media screen and (min-width: $tablet) {
+  //   width: 100px;
+  // }
 }
 
 .work__title {
@@ -63,9 +66,10 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
   text-align: left;
 
-  white-space: nowrap;
+  //white-space: nowrap;
   // overflow: hidden;
   //text-overflow: ellipsis;
 }
