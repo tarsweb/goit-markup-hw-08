@@ -15,8 +15,8 @@ body {
 
 img {
   display: block;
-  padding: 0;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .address__link, .our-client, .contacts__link, .site-logo, .site-navigation__link, .social-link {
