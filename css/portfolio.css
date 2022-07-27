@@ -258,9 +258,11 @@ img {
 }
 
 .page-header__social-link {
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.222;
   letter-spacing: 0.02em;
+  color: #2196f3;
 }
 .page-header__social-link:hover, .page-header__social-link:focus {
   background-color: transparent;
@@ -445,6 +447,7 @@ img {
   .contacts__item:last-child {
     font-size: 34px;
     line-height: 1.176;
+    color: #2196f3;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -520,6 +523,7 @@ img {
 
 .menu-container {
   display: none;
+  z-index: 10;
 }
 @media screen and (max-width: 767px) {
   .menu-container {

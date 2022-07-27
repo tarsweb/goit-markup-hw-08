@@ -267,9 +267,11 @@ img {
 }
 
 .page-header__social-link {
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.222;
   letter-spacing: 0.02em;
+  color: #2196f3;
 }
 .page-header__social-link:hover, .page-header__social-link:focus {
   background-color: transparent;
@@ -454,6 +456,7 @@ img {
   .contacts__item:last-child {
     font-size: 34px;
     line-height: 1.176;
+    color: #2196f3;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -529,6 +532,7 @@ img {
 
 .menu-container {
   display: none;
+  z-index: 10;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
@@ -1071,8 +1075,8 @@ img {
 /* animation */
 @-webkit-keyframes fadeOut {
   from {
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
     border-radius: 0;
   }
@@ -1086,8 +1090,8 @@ img {
 }
 @keyframes fadeOut {
   from {
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
     border-radius: 0;
   }
@@ -1115,8 +1119,8 @@ img {
     background: #ffffff;
   }
   to {
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
     border-radius: 0;
   }
@@ -1137,10 +1141,86 @@ img {
     background: #ffffff;
   }
   to {
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
     border-radius: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  @-webkit-keyframes fadeOut {
+    from {
+      -webkit-transform: translate(-50%, -50%) scale(1);
+              transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+      border-radius: 0;
+    }
+    to {
+      -webkit-transform: translate(300%, -100%) scale(0.4);
+              transform: translate(300%, -100%) scale(0.4);
+      opacity: 0.7;
+      border-radius: 70%;
+      background: #000000;
+    }
+  }
+  @keyframes fadeOut {
+    from {
+      -webkit-transform: translate(-50%, -50%) scale(1);
+              transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+      border-radius: 0;
+    }
+    to {
+      -webkit-transform: translate(300%, -100%) scale(0.4);
+              transform: translate(300%, -100%) scale(0.4);
+      opacity: 0.7;
+      border-radius: 70%;
+      background: #000000;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    from {
+      -webkit-transform: translate(-300%, -100%) scale(0.4);
+              transform: translate(-300%, -100%) scale(0.4);
+      opacity: 0.7;
+      border-radius: 70%;
+      background: #000000;
+    }
+    80% {
+      -webkit-transform: translate(-100%, -50%) scale(0.7);
+              transform: translate(-100%, -50%) scale(0.7);
+      opacity: 0.7;
+      border-radius: 30%;
+      background: #ffffff;
+    }
+    to {
+      -webkit-transform: translate(-50%, -50%) scale(1);
+              transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+      border-radius: 0;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      -webkit-transform: translate(-300%, -100%) scale(0.4);
+              transform: translate(-300%, -100%) scale(0.4);
+      opacity: 0.7;
+      border-radius: 70%;
+      background: #000000;
+    }
+    80% {
+      -webkit-transform: translate(-100%, -50%) scale(0.7);
+              transform: translate(-100%, -50%) scale(0.7);
+      opacity: 0.7;
+      border-radius: 30%;
+      background: #ffffff;
+    }
+    to {
+      -webkit-transform: translate(-50%, -50%) scale(1);
+              transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+      border-radius: 0;
+    }
   }
 }
 .modal {
@@ -1157,6 +1237,8 @@ img {
   border-radius: 4px;
   -webkit-animation: fadeIn 350ms ease-in;
           animation: fadeIn 350ms ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .backdrop--is-hidden .modal {
   -webkit-animation: fadeOut 350ms ease-out;
@@ -1165,6 +1247,8 @@ img {
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
+    top: 50%;
+    left: 50%;
     width: 450px;
     height: 610px;
   }
@@ -1257,6 +1341,13 @@ img {
   display: inline-flex;
   margin: 0;
 }
+@media screen and (min-width: 1200px) {
+  .formfield-label.form-service_order__label--concord {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
+}
 
 .formfield-input-wrap {
   position: relative;
@@ -1308,6 +1399,14 @@ img {
   margin-top: 5px;
   padding: 12px 16px;
   resize: none;
+  font-size: 14px;
+  line-height: 1.714;
+}
+@media screen and (min-width: 1200px) {
+  .formfield-textarea {
+    font-size: 12px;
+    line-height: 1.167;
+  }
 }
 .formfield-textarea::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -1327,8 +1426,6 @@ img {
 
 .formfield-checkbox {
   color: #757575;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1358,11 +1455,26 @@ img {
   background-size: contain;
   background-origin: border-box;
 }
+@media screen and (min-width: 1200px) {
+  .formfield-checkbox-icon {
+    margin-top: 3px;
+  }
+}
 
 .formfield-checkbox-link {
   margin-left: 5px;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
   text-decoration: underline;
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .formfield-checkbox-link {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
 }
 
 .form-service_order__button-submit {

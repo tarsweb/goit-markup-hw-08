@@ -24,7 +24,7 @@
 .formfield-label {
   display: block;
   margin-bottom: 10px;
-
+  
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
@@ -35,10 +35,18 @@
   transition: $main-transition-duration $main-transition-timing-function;
   transition-property: color, fill;
 
+  // white-space: nowrap;
+
   &.form-service_order__label--concord {
     display: inline-flex;
 
     margin: 0;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+    }
   }
 }
 
@@ -96,6 +104,14 @@
   padding: 12px 16px;
 
   resize: none;
+  
+  font-size: 14px;
+  line-height: 1.714;
+  
+  @media screen and (min-width: $desktop) {
+    font-size: 12px;
+    line-height: 1.167;
+  }
 
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
@@ -111,11 +127,7 @@
 .formfield-checkbox {
   color: $primary-light-color;
 
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-
   transition: border-color $main-transition-duration $main-transition-timing-function;
-
 
   &:hover,
   &:focus {
@@ -150,13 +162,28 @@
     background-size: contain;
     background-origin: border-box;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 3px;
+  }
 }
 
 .formfield-checkbox-link {
   margin-left: 5px;
+
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+
   text-decoration: underline;
 
   color: $accent-light-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
 }
 
 // .formfield-checkbox:hover .formfield-checkbox-icon,

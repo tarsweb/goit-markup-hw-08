@@ -28,8 +28,9 @@
    padding-bottom: 10px;
   }
 }
-.page-header__link {
 
+.page-header__link {
+  
   @media screen and (min-width: $tablet) {
     display: inline-flex;
     align-items: center;
@@ -44,7 +45,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    &.contacts__link {
+     &.contacts__link {
       padding-top: 32px;
       padding-bottom: 32px;
     }
@@ -77,11 +78,13 @@
 }
 
 .page-header__social-link {
-  // width: max-content;
   
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.222;
   letter-spacing: 0.02em;
+
+  color: $accent-light-color;
 
   &:hover,
   &:focus {
@@ -129,6 +132,8 @@
 
 .menu-container {
   display: none;
+
+  z-index: 10;
 
   @media screen and (max-width: calc($tablet - 1px)) {
     flex-direction: column;

@@ -27,10 +27,11 @@
 /* animation */
 @keyframes fadeOut {
   from {
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1);
     opacity: 1;
     border-radius: 0;
   }
+
   to {
     transform: translate(300%, -100%) scale(0.4);
     opacity: 0.7;
@@ -54,16 +55,53 @@
     background: $main-light-color;
   }
 
-  to {
-    transform: translate(-50%, -50%) scale(1);
+  to{ 
+    transform: scale(1);
     opacity: 1;
     border-radius: 0;
   }
 }
 
-.modal {
-  
+@media screen and (min-width: $tablet) {
+  @keyframes fadeOut {
+    from {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+      border-radius: 0;
+    }
 
+    to {
+      transform: translate(300%, -100%) scale(0.4);
+      opacity: 0.7;
+      border-radius: 70%;
+      background: $accent-dark-color;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      transform: translate(-300%, -100%) scale(0.4);
+      opacity: 0.7;
+      border-radius: 70%;
+      background: $accent-dark-color;
+    }
+
+    80% {
+      transform: translate(-100%, -50%) scale(0.7);
+      opacity: 0.7;
+      border-radius: 30%;
+      background: $main-light-color;
+    }
+
+    to{ 
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+      border-radius: 0;
+    }
+  }
+}
+
+.modal {
   position: relative;
 
   display: block;
@@ -77,7 +115,6 @@
   overflow-y: scroll;
 
   // desktop
-  
 
   background-color: $main-light-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -86,7 +123,7 @@
   border-radius: 4px;
 
   animation: fadeIn 350ms ease-in;
-  // animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
   .backdrop--is-hidden &{
     animation: fadeOut 350ms ease-out;
@@ -101,16 +138,14 @@
 
   @media screen and(min-width: $tablet) {
     position: absolute;
-    // top: 50%;
-    // left: 50%;
+    top: 50%;
+    left: 50%;
     width: 450px;
     height: 610px;
   }
 
   @media screen and(min-width: $desktop) {
     // position: absolute;
-    // top: 50%;
-    // left: 50%;
     width: 530px;
     height: 580px;
   }
