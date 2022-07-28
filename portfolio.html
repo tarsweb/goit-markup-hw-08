@@ -174,7 +174,9 @@
 
     <main>
       <section class="works">
+
         <h1 class="visually-hidden">Наши работы</h1>
+        
         <div class="container">
 
           <ul class="works-filter-list">
@@ -208,12 +210,54 @@
             <li class="works-list__item">
               <a class="work">
                 <div class="work__thumb">
-                  <img
-                    class="work__preview"
-                    src="./images/works/img.jpg"
-                    alt="Изображение сайта"
-                    width="370"
-                  />
+
+                  <picture>
+
+                    <!-- desktop -->
+                      <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-1_270.webp 1x, ./images/works/img-1_270@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-1_270.jpg 1x, ./images/works/img-1_270@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!-- tablet -->
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-1_354.webp 1x, ./images/works/img-1_354@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-1_354.jpg 1x, ./images/works/img-1_354@2x.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <source
+                      srcset="./images/works/img-1_450.webp 1x, ./images/works/img-1_450@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source
+                      srcset="./images/works/img-1_450.jpg 1x, ./images/works/img-1_450@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <img
+                      class="work__preview"
+                      src="./images/works/img-1_450.jpg"
+                      alt="Изображение сайта"
+                      width="450"
+                    />
+
+                  </picture>
+
                   <p class="work__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -222,194 +266,590 @@
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
+
                 </div>
+
                 <div class="work__description">
                   <h2 class="work__title">Технокряк</h2>
                   <p class="work__type">Веб-сайт</p>
                 </div>
+
               </a>
+
             </li>
 
             <li class="works-list__item">
+
               <a class="work">
+
                 <div class="work__thumb">
-                  <img
-                    class="work__preview"
-                    src="./images/works/img-1.jpg"
-                    alt="Изображение постера"
-                    width="370"
-                  />
+
+                  <picture>
+
+                    <!-- desktop -->
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-2_270.webp 1x, ./images/works/img-2_270@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-2_270.jpg 1x, ./images/works/img-2_270@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!-- tablet -->
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-2_354.webp 1x, ./images/works/img-2_354@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-2_354.jpg 1x, ./images/works/img-2_354@2x.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!--  -->
+                    <source
+                      srcset="./images/works/img-2_450.webp 1x, ./images/works/img-2_450@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source
+                      srcset="./images/works/img-2_450.jpg 1x, ./images/works/img-2_450@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <img
+                      class="work__preview"
+                      src="./images/works/img-2_450.jpg"
+                      alt="Изображение постера"
+                      width="450"
+                    />
+
+                  </picture>
+
                   <p class="work__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
+
                 </div>
+
                 <div class="work__description">
                   <h2 class="work__title">Постер New Orlean vs Golden State</h2>
                   <p class="work__type">Дизайн</p>
                 </div>
+
               </a>
+
             </li>
 
             <li class="works-list__item">
+
               <a class="work">
+
                 <div class="work__thumb">
-                  <img
-                    class="work__preview"
-                    src="./images/works/img-2.jpg"
-                    alt="Изображение логотипа приложения"
-                    width="370"
-                  />
+
+                  <picture>
+
+                    <!-- desktop -->
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-3_270.webp 1x, ./images/works/img-3_270@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-3_270.jpg 1x, ./images/works/img-3_270@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!-- tablet -->
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-3_354.webp 1x, ./images/works/img-3_354@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-3_354.jpg 1x, ./images/works/img-3_354@2x.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!--  -->
+                    <source
+                      srcset="./images/works/img-3_450.webp 1x, ./images/works/img-3_450@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source
+                      srcset="./images/works/img-3_450.jpg 1x, ./images/works/img-3_450@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <img
+                      class="work__preview"
+                      src="./images/works/img-3_450.jpg"
+                      alt="Изображение логотипа приложения"
+                      width="450"
+                    />
+
+                  </picture>
+
                   <p class="work__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
+
                 </div>
+
                 <div class="work__description">
                   <h2 class="work__title">Ресторан Seafood</h2>
                   <p class="work__type">Приложение</p>
                 </div>
+
               </a>
+
             </li>
 
             <li class="works-list__item">
+
               <a class="work">
+
                 <div class="work__thumb">
-                  <img
-                    class="work__preview"
-                    src="./images/works/img-3.jpg"
-                    alt="Изображение проекта по маркетингу"
-                    width="370"
-                  />
+
+                  <picture>
+
+                    <!-- desktop -->
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-4_270.webp 1x, ./images/works/img-4_270@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-4_270.jpg 1x, ./images/works/img-4_270@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!-- tablet -->
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-4_354.webp 1x, ./images/works/img-4_354@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-4_354.jpg 1x, ./images/works/img-4_354@2x.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!--  -->
+                    <source
+                      srcset="./images/works/img-4_450.webp 1x, ./images/works/img-4_450@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source
+                      srcset="./images/works/img-4_450.jpg 1x, ./images/works/img-4_450@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <img
+                      class="work__preview"
+                      src="./images/works/img-4_450.jpg"
+                      alt="Изображение проекта по маркетингу"
+                      width="450"
+                    />
+
+                  </picture>
+
                   <p class="work__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
+
                 </div>
+
                 <div class="work__description">
                   <h2 class="work__title">Проект Prime</h2>
                   <p class="work__type">Маркетинг</p>
                 </div>
+
               </a>
+
             </li>
 
             <li class="works-list__item">
+
               <a class="work">
+
                 <div class="work__thumb">
-                  <img
-                    class="work__preview"
-                    src="./images/works/img-4.jpg"
-                    alt="Изображение логотипа приложения"
-                    width="370"
-                  />
+
+                  <picture>
+
+                    <!-- desktop -->
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-5_270.webp 1x, ./images/works/img-5_270@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-5_270.jpg 1x, ./images/works/img-5_270@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!-- tablet -->
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-5_354.webp 1x, ./images/works/img-5_354@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-5_354.jpg 1x, ./images/works/img-5_354@2x.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!--  -->
+                    <source
+                      srcset="./images/works/img-5_450.webp 1x, ./images/works/img-5_450@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source
+                      srcset="./images/works/img-5_450.jpg 1x, ./images/works/img-5_450@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <img
+                      class="work__preview"
+                      src="./images/works/img-5_450.jpg"
+                      alt="Изображение логотипа приложения"
+                      width="450"
+                    />
+
+                  </picture>
+
                   <p class="work__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
+
                 </div>
+
                 <div class="work__description">
                   <h2 class="work__title">Проект Boxes</h2>
                   <p class="work__type">Приложение</p>
                 </div>
+
               </a>
+
             </li>
 
             <li class="works-list__item">
+
               <a class="work">
+
                 <div class="work__thumb">
-                  <img
-                    class="work__preview"
-                    src="./images/works/img-5.jpg"
-                    alt="Изображение сайта"
-                    width="370"
-                  />
+
+                  <picture>
+
+                    <!-- desktop -->
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-6_270.webp 1x, ./images/works/img-6_270@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-6_270.jpg 1x, ./images/works/img-6_270@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!-- tablet -->
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-6_354.webp 1x, ./images/works/img-6_354@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-6_354.jpg 1x, ./images/works/img-6_354@2x.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!--  -->
+                    <source
+                      srcset="./images/works/img-6_450.webp 1x, ./images/works/img-6_450@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source
+                      srcset="./images/works/img-6_450.jpg 1x, ./images/works/img-6_450@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <img
+                      class="work__preview"
+                      src="./images/works/img-6_450.jpg"
+                      alt="Изображение сайта"
+                      width="450"
+                    />
+
+                  </picture>
+
                   <p class="work__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
+
                 </div>
+
                 <div class="work__description">
                   <h2 class="work__title title">Inspiration has no Borders</h2>
                   <p class="work__type">Веб-сайт</p>
                 </div>
+
               </a>
+
             </li>
 
             <li class="works-list__item">
+
               <a class="work">
+
                 <div class="work__thumb">
-                  <img
-                    class="work__preview"
-                    src="./images/works/img-6.jpg"
-                    alt="Изображение идания"
-                    width="370"
-                  />
+
+                  <picture>
+
+                    <!-- desktop -->
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-7_270.webp 1x, ./images/works/img-7_270@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-7_270.jpg 1x, ./images/works/img-7_270@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!-- tablet -->
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-7_354.webp 1x, ./images/works/img-7_354@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-7_354.jpg 1x, ./images/works/img-7_354@2x.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!--  -->
+                    <source
+                      srcset="./images/works/img-7_450.webp 1x, ./images/works/img-7_450@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source
+                      srcset="./images/works/img-7_450.jpg 1x, ./images/works/img-7_450@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <img
+                      class="work__preview"
+                      src="./images/works/img-7_450.jpg"
+                      alt="Изображение идания"
+                      width="450"
+                    />
+
+                  </picture>
+
                   <p class="work__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
+
                 </div>
+
                 <div class="work__description">
                   <h2 class="work__title">Издание Limited Edition</h2>
                   <p class="work__type">Дизайн</p>
                 </div>
+
               </a>
+
             </li>
 
             <li class="works-list__item">
+
               <a class="work">
+
                 <div class="work__thumb">
-                  <img
-                    class="work__preview"
-                    src="./images/works/img-7.jpg"
-                    alt="Изображение проекта по маркетингу"
-                    width="370"
-                  />
+
+                  <picture>
+
+                    <!-- desktop -->
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-8_270.webp 1x, ./images/works/img-8_270@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-8_270.jpg 1x, ./images/works/img-8_270@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!-- tablet -->
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-8_354.webp 1x, ./images/works/img-8_354@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-8_354.jpg 1x, ./images/works/img-8_354@2x.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!--  -->
+                    <source
+                      srcset="./images/works/img-8_450.webp 1x, ./images/works/img-8_450@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source
+                      srcset="./images/works/img-8_450.jpg 1x, ./images/works/img-8_450@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <img
+                      class="work__preview"
+                      src="./images/works/img-8_450.jpg"
+                      alt="Изображение проекта по маркетингу"
+                      width="450"
+                    />
+
+                  </picture>
+
                   <p class="work__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
+
                 </div>
+
                 <div class="work__description">
                   <h2 class="work__title">Проект LAB</h2>
                   <p class="work__type">Маркетинг</p>
                 </div>
+
               </a>
+
             </li>
 
             <li class="works-list__item">
+
               <a class="work">
+
                 <div class="work__thumb">
-                  <img
-                    class="work__preview"
-                    src="./images/works/img-8.jpg"
-                    alt="логотипа приложения"
-                    width="370"
-                  />
+
+                  <picture>
+
+                    <!-- desktop -->
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-9_270.webp 1x, ./images/works/img-9_270@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 1200px)"
+                      srcset="./images/works/img-9_270.jpg 1x, ./images/works/img-9_270@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!-- tablet -->
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-9_354.webp 1x, ./images/works/img-9_354@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source 
+                      media="(min-width: 768px)"
+                      srcset="./images/works/img-9_354.jpg 1x, ./images/works/img-9_354@2x.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <!--  -->
+                    <source
+                      srcset="./images/works/img-9_450.webp 1x, ./images/works/img-9_450@2x.webp 2x" 
+                      type="image/webp"
+                    >
+
+                    <source
+                      srcset="./images/works/img-9_450.jpg 1x, ./images/works/img-9_450@2.jpg 2x" 
+                      type="image/jpg"
+                    >
+
+                    <img
+                      class="work__preview"
+                      src="./images/works/img-9_450.jpg"
+                      alt="логотипа приложения"
+                      width="450"
+                    />
+
+                  </picture>
+
                   <p class="work__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
+
                 </div>
+                
                 <div class="work__description">
                   <h2 class="work__title">Growing Business</h2>
                   <p class="work__type">Приложение</p>
                 </div>
+
               </a>
+
             </li>
 
           </ul>
 
         </div>
-        
+
       </section>
     </main>
 

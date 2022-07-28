@@ -1,5 +1,5 @@
 .contacts-thumb {
-  display: inline-flex;
+  display: flex;
 
   @media screen and (max-width: calc($tablet - 1px)) {
     flex-wrap: wrap;

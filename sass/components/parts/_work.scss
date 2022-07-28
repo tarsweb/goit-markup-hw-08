@@ -1,3 +1,8 @@
+.work {
+  display: flex;
+  flex-direction: column;
+}
+
 .work__thumb {
   position: relative;
   overflow: hidden;
@@ -11,6 +16,7 @@
 
   margin-top: 0;
   margin-bottom: 0;
+  padding: 77px 24px;
 
   font-size: 18px;
   line-height: 1.56;
@@ -21,13 +27,11 @@
   transform: translateY(0);
   transition: transform $main-transition-duration $main-transition-timing-function;
 
+  overflow: auto;
+
   .works-list__item:hover &,
   .works-list__item:focus & {
     transform: translateY(-100%);
-  }
-
-  @media screen and (max-width: calc($tablet - 1px)) {
-    padding: 77px 24px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -47,15 +51,15 @@
 .work__description {
   $border-color: #EEEEEE; 
 
+  flex-grow: 1;
+
   padding: 20px 24px;
 
   // min-width: 370px;
 
   border: 1px solid $border-color;
 
-  // @media screen and (min-width: $tablet) {
-  //   width: 100px;
-  // }
+
 }
 
 .work__title {
@@ -69,7 +73,7 @@
 
   text-align: left;
 
-  //white-space: nowrap;
+  // white-space: nowrap;
   // overflow: hidden;
   //text-overflow: ellipsis;
 }

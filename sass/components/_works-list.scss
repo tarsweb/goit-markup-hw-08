@@ -21,6 +21,8 @@
 .works-list__item {
   // $count-inline: 3;
   // flex-basis: calc(100% / $count-inline - $margin-set-gap);
+
+  display: flex;
   flex-basis: 100%;
 
   transition: $main-transition-duration $main-transition-timing-function;
