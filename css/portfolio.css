@@ -541,7 +541,7 @@ img {
     left: 0;
     padding: 48px 40px;
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     background-color: #ffffff;
   }
   .menu-container--is-open {
@@ -788,6 +788,9 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .page-footer__item {
+    text-align: unset;
+  }
   .page-footer__item:not(:last-child) {
     margin-bottom: 0;
   }
