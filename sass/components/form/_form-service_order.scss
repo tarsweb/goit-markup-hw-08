@@ -42,6 +42,8 @@
 
     margin: 0;
 
+    user-select: none;
+
     @media screen and (min-width: $desktop) {
       font-size: 14px;
       line-height: 1.714;

@@ -1238,6 +1238,7 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 530px;
+    overflow: hidden;
   }
 }
 
@@ -1326,6 +1327,10 @@ img {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media screen and (min-width: 1200px) {
   .formfield-label.form-service_order__label--concord {
