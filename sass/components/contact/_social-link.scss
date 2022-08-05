@@ -7,8 +7,9 @@
 
   fill: $accent-link-color;
 
-  transition: $main-transition-duration $main-transition-timing-function;
-  transition-property: fill, background-color;
+  // transition: $main-transition-duration $main-transition-timing-function;
+  // transition-property: fill, background-color;
+  @include transition((fill, background-color));
 
   &:hover,
   &:focus {

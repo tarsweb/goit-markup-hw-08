@@ -1,6 +1,6 @@
 .form-subscribe {
   @media screen and (min-width: $desktop) {
-    display: inline-flex;  
+    display: inline-flex;
   }
 }
 
@@ -67,7 +67,9 @@
 
   background-size: contain;
 
-  transition: background-color $main-transition-duration $main-transition-timing-function;
+  //transition: background-color $main-transition-duration $main-transition-timing-function;
+  @include transition(background-color);
+
 
   &:hover,
   &:focus {

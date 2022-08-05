@@ -25,7 +25,9 @@
   background-color: $accent-light-alfa-color;
 
   transform: translateY(0);
-  transition: transform $main-transition-duration $main-transition-timing-function;
+  // transition: transform $main-transition-duration $main-transition-timing-function;
+  // transition-property: transform;
+  @include transition(transform);
 
   overflow: auto;
 

@@ -1,10 +1,13 @@
+@import './mixin';
+
 %link {
   text-decoration: none;
 
   color: inherit;
 
-  transition: $main-transition-duration $main-transition-timing-function;
-  transition-property: color, fill;
+  //transition: $main-transition-duration $main-transition-timing-function;
+  //transition-property: color, fill;
+  @include transition((color, fill));
 
   &:hover,
   &:focus {

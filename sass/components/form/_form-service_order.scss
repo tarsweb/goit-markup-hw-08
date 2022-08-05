@@ -32,8 +32,9 @@
   color: $primary-light-color;
   fill: $primary-dark-color;
 
-  transition: $main-transition-duration $main-transition-timing-function;
-  transition-property: color, fill;
+  // transition: $main-transition-duration $main-transition-timing-function;
+  // transition-property: color, fill;
+  @include transition((color, fill));
 
   // white-space: nowrap;
 

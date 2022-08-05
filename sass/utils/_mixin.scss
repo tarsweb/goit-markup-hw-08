@@ -1,0 +1,13 @@
+@mixin flex-basis ($count-inline, $gap: $margin-set-gap) {
+  flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap) / $count-inline);
+}
+
+@mixin transition ($property, $duration: $main-transition-duration, $timing-function: $main-transition-timing-function) {
+  // transition : {
+  //   property: $property; 
+  //   duration : $duration;
+  //   timing-function: $timing-function;
+  // }
+  transition : $duration $timing-function;
+  transition-property: $property;
+}

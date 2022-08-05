@@ -25,8 +25,9 @@
   display: flex;
   flex-basis: 100%;
 
-  transition: $main-transition-duration $main-transition-timing-function;
-  transition-property: box-shadow;
+  // transition: $main-transition-duration $main-transition-timing-function;
+  // transition-property: box-shadow;
+  @include transition(box-shadow);
 
   &:hover,
   &:focus {
@@ -37,12 +38,14 @@
 
   @media screen and (min-width: $tablet) {
     $count-inline: 2;
-    flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap) / $count-inline);
+    // flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap) / $count-inline);
+    @include flex-basis($count-inline);
   }
 
   @media screen and (min-width: $desktop) {
     $count-inline: 3;
-    flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap) / $count-inline);
+    // flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap) / $count-inline);
+    @include flex-basis($count-inline);
   }
 }
 

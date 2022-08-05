@@ -22,16 +22,19 @@
 .our-clients__item {
 
   $count-inline: 2;
-  flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap)/$count-inline);
+  // flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap)/$count-inline);
+  @include flex-basis($count-inline);
 
   @media screen and (min-width : $tablet) {
     $count-inline: 3;
-    flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap)/$count-inline);
+    // flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap)/$count-inline);
+    @include flex-basis($count-inline);
   }
 
   @media screen and (min-width : $desktop) {
     $count-inline: 6;
-    flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap)/$count-inline);
+    //flex-basis: calc((100% - ($count-inline - 1) * $margin-set-gap)/$count-inline);
+    @include flex-basis($count-inline);
   }
 }
 
@@ -50,7 +53,8 @@
   border: 1px solid $accent-link-color;
   border-radius: 4px;
 
-  transition-property: fill, border-color;
+  // transition-property: fill, border-color;
+  @include transition((fill, border-color));
 
   &:hover,
   &:focus {
